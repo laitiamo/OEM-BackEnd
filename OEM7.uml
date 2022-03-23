@@ -1,0 +1,1808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_mxey8G1rEeiR_awaVlR27Q">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_m0UEgG1rEeiR_awaVlR27Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_m0cAUG1rEeiR_awaVlR27Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_m1OqgG1rEeiR_awaVlR27Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_m1XNYG1rEeiR_awaVlR27Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_m1ZpoG1rEeiR_awaVlR27Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mxfaAG1rEeiR_awaVlR27Q" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_mxfaAW1rEeiR_awaVlR27Q" name="cxxy">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mxfaAm1rEeiR_awaVlR27Q" name="eta4">
+        <packagedElement xmi:type="uml:Package" xmi:id="_mxfaA21rEeiR_awaVlR27Q" name="common">
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxfaBG1rEeiR_awaVlR27Q" name="WebRealm">
+            <generalization xmi:id="_m0C-wG1rEeiR_awaVlR27Q" general="_mzj2nW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0C-wW1rEeiR_awaVlR27Q" name="doGetAuthorizationInfo" visibility="protected">
+              <ownedParameter xmi:id="_m0C-wm1rEeiR_awaVlR27Q" name="principals" type="_mzj2n21rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m0C-w21rEeiR_awaVlR27Q" name="return" type="_mzj2mm1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m0Ez8G1rEeiR_awaVlR27Q" name="doGetAuthenticationInfo" visibility="protected">
+              <ownedParameter xmi:id="_m0Ez8W1rEeiR_awaVlR27Q" name="token" type="_mzj2lm1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m0Ez8m1rEeiR_awaVlR27Q" name="return" type="_mzj2lW1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxgBEG1rEeiR_awaVlR27Q" name="WebConfig">
+            <ownedComment xmi:id="_mxhPMG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Web应用配置类
+ * @author WYF
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m0FbAG1rEeiR_awaVlR27Q" general="_mzj2qm1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m0VSoG1rEeiR_awaVlR27Q" name="CACHE_NAME" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m0VSoW1rEeiR_awaVlR27Q" value="WebCache"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0WgwG1rEeiR_awaVlR27Q" name="ROLE_ADMIN" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m0WgwW1rEeiR_awaVlR27Q" value="admin"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0Xu4G1rEeiR_awaVlR27Q" name="ROLE_LEADER" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m0Xu4W1rEeiR_awaVlR27Q" value="leader"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0YV8G1rEeiR_awaVlR27Q" name="ROLE_INSTRUCTOR" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m0YV8W1rEeiR_awaVlR27Q" value="instructor"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0ZkEG1rEeiR_awaVlR27Q" name="ROLE_TEACHER" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m0ZkEW1rEeiR_awaVlR27Q" value="teacher"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0bZQG1rEeiR_awaVlR27Q" name="ROLE_STUDENT" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m0bZQW1rEeiR_awaVlR27Q" value="student"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0cnYG1rEeiR_awaVlR27Q" name="AWARD_TYPE_ALL" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_m0cnYW1rEeiR_awaVlR27Q"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0d1gG1rEeiR_awaVlR27Q" name="AWARD_TYPE_STUDENT" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_m0d1gW1rEeiR_awaVlR27Q" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0fDoG1rEeiR_awaVlR27Q" name="AWARD_TYPE_TEACHER" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_m0fDoW1rEeiR_awaVlR27Q" value="2"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0gRwG1rEeiR_awaVlR27Q" name="REVIEW_UNREAD" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_m0gRwW1rEeiR_awaVlR27Q" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0hf4G1rEeiR_awaVlR27Q" name="REVIEW_PASS" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_m0hf4W1rEeiR_awaVlR27Q" value="2"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m0iuAG1rEeiR_awaVlR27Q" name="REVIEW_NOT_PASS" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_m0iuAW1rEeiR_awaVlR27Q" value="3"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_m0jVEG1rEeiR_awaVlR27Q" name="configConstant" visibility="public">
+              <ownedParameter xmi:id="_m0jVEW1rEeiR_awaVlR27Q" name="me" type="_mzj2p21rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m0j8IG1rEeiR_awaVlR27Q" name="configRoute" visibility="public">
+              <ownedParameter xmi:id="_m0j8IW1rEeiR_awaVlR27Q" name="me" type="_mzkdoW1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m0kjMG1rEeiR_awaVlR27Q" name="configEngine" visibility="public">
+              <ownedParameter xmi:id="_m0kjMW1rEeiR_awaVlR27Q" name="me" type="_mzkdsW1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m0lKQG1rEeiR_awaVlR27Q" name="configPlugin" visibility="public">
+              <ownedParameter xmi:id="_m0lKQW1rEeiR_awaVlR27Q" name="me" type="_mzkdoG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m0mYYG1rEeiR_awaVlR27Q" name="configInterceptor" visibility="public">
+              <ownedParameter xmi:id="_m0mYYW1rEeiR_awaVlR27Q" name="me" type="_mzj2qW1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m0m_cG1rEeiR_awaVlR27Q" name="configHandler" visibility="public">
+              <ownedParameter xmi:id="_m0m_cW1rEeiR_awaVlR27Q" name="me" type="_mzj2qG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m0nmgG1rEeiR_awaVlR27Q" name="afterJFinalStart" visibility="public"/>
+            <ownedOperation xmi:id="_m0oNkG1rEeiR_awaVlR27Q" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_m0oNkW1rEeiR_awaVlR27Q" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m0oNkm1rEeiR_awaVlR27Q" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m0oNk21rEeiR_awaVlR27Q"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mxhPMW1rEeiR_awaVlR27Q" name="controller">
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxhPMm1rEeiR_awaVlR27Q" name="LogoutController">
+            <generalization xmi:id="_m0o0oG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0o0oW1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxh2QG1rEeiR_awaVlR27Q" name="ImportAwardController">
+            <generalization xmi:id="_m0pbsG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0pbsW1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m0qCwG1rEeiR_awaVlR27Q" name="download" visibility="public"/>
+            <ownedOperation xmi:id="_m0qp0G1rEeiR_awaVlR27Q" name="upload" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxh2QW1rEeiR_awaVlR27Q" name="ImportStuController">
+            <generalization xmi:id="_m0qp0W1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0qp0m1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m0rQ4G1rEeiR_awaVlR27Q" name="download" visibility="public"/>
+            <ownedOperation xmi:id="_m0r38G1rEeiR_awaVlR27Q" name="upload" visibility="public"/>
+            <ownedOperation xmi:id="_m0sfAG1rEeiR_awaVlR27Q" name="listClass" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxidUG1rEeiR_awaVlR27Q" name="ImportTeaController">
+            <generalization xmi:id="_m0sfAW1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0tGEG1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m0tGEW1rEeiR_awaVlR27Q" name="download" visibility="public"/>
+            <ownedOperation xmi:id="_m0ttIG1rEeiR_awaVlR27Q" name="upload" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxjEYG1rEeiR_awaVlR27Q" name="PasswordController">
+            <generalization xmi:id="_m0ttIW1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0ttIm1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m0uUMG1rEeiR_awaVlR27Q" name="update" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxjrcG1rEeiR_awaVlR27Q" name="MineController">
+            <generalization xmi:id="_m0u7QG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0u7QW1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m0viUG1rEeiR_awaVlR27Q" name="list" visibility="public"/>
+            <ownedOperation xmi:id="_m0wJYG1rEeiR_awaVlR27Q" name="detail" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxjrcW1rEeiR_awaVlR27Q" name="QueryTeaController">
+            <generalization xmi:id="_m0wwcG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0wwcW1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m0xXgG1rEeiR_awaVlR27Q" name="list" visibility="public"/>
+            <ownedOperation xmi:id="_m0xXgW1rEeiR_awaVlR27Q" name="detail" visibility="public"/>
+            <ownedOperation xmi:id="_m0x-kG1rEeiR_awaVlR27Q" name="exportXLS" visibility="public"/>
+            <ownedOperation xmi:id="_m0yloG1rEeiR_awaVlR27Q" name="exportZIP" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxkSgG1rEeiR_awaVlR27Q" name="StudentController">
+            <generalization xmi:id="_m0zMsG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0zMsW1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m0zzwG1rEeiR_awaVlR27Q" name="list" visibility="public"/>
+            <ownedOperation xmi:id="_m00a0G1rEeiR_awaVlR27Q" name="reset" visibility="public"/>
+            <ownedOperation xmi:id="_m00a0W1rEeiR_awaVlR27Q" name="listClass" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxk5kG1rEeiR_awaVlR27Q" name="HomeController">
+            <generalization xmi:id="_m01B4G1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m01B4W1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxlgoG1rEeiR_awaVlR27Q" name="AwardAddController">
+            <generalization xmi:id="_m01o8G1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m01o8W1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m02QAG1rEeiR_awaVlR27Q" name="add" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxmHsG1rEeiR_awaVlR27Q" name="QueryStuController">
+            <generalization xmi:id="_m02QAW1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m02QAm1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m023EG1rEeiR_awaVlR27Q" name="list" visibility="public"/>
+            <ownedOperation xmi:id="_m03eIG1rEeiR_awaVlR27Q" name="detail" visibility="public"/>
+            <ownedOperation xmi:id="_m04FMG1rEeiR_awaVlR27Q" name="listClass" visibility="public"/>
+            <ownedOperation xmi:id="_m04sQG1rEeiR_awaVlR27Q" name="exportXLS" visibility="public"/>
+            <ownedOperation xmi:id="_m05TUG1rEeiR_awaVlR27Q" name="exportZIP" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxmuwG1rEeiR_awaVlR27Q" name="UserTeaController">
+            <generalization xmi:id="_m056YG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m06hcG1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m06hcW1rEeiR_awaVlR27Q" name="list" visibility="public"/>
+            <ownedOperation xmi:id="_m07IgG1rEeiR_awaVlR27Q" name="reset" visibility="public"/>
+            <ownedOperation xmi:id="_m07vkG1rEeiR_awaVlR27Q" name="setRole" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxnV0G1rEeiR_awaVlR27Q" name="ReviewController">
+            <generalization xmi:id="_m08WoG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m08WoW1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m089sG1rEeiR_awaVlR27Q" name="list" visibility="public"/>
+            <ownedOperation xmi:id="_m09kwG1rEeiR_awaVlR27Q" name="pass" visibility="public"/>
+            <ownedOperation xmi:id="_m0-L0G1rEeiR_awaVlR27Q" name="notPass" visibility="public"/>
+            <ownedOperation xmi:id="_m0-y4G1rEeiR_awaVlR27Q" name="detail" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxn84G1rEeiR_awaVlR27Q" name="DetailStuController">
+            <generalization xmi:id="_m0-y4W1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m0_Z8G1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxoj8G1rEeiR_awaVlR27Q" name="DetailTeaController">
+            <generalization xmi:id="_m0_Z8W1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m1ABAG1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxpLAG1rEeiR_awaVlR27Q" name="AwardController">
+            <generalization xmi:id="_m1ABAW1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m1ABAm1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m1AoEG1rEeiR_awaVlR27Q" name="list" visibility="public"/>
+            <ownedOperation xmi:id="_m1BPIG1rEeiR_awaVlR27Q" name="update" visibility="public"/>
+            <ownedOperation xmi:id="_m1B2MG1rEeiR_awaVlR27Q" name="delete" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxqZIG1rEeiR_awaVlR27Q" name="LoginController">
+            <generalization xmi:id="_m1CdQG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m1DEUG1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m1DEUW1rEeiR_awaVlR27Q" name="login" visibility="public"/>
+            <ownedOperation xmi:id="_m1DrYG1rEeiR_awaVlR27Q" name="captcha" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxrAMG1rEeiR_awaVlR27Q" name="UploadController">
+            <generalization xmi:id="_m1EScG1rEeiR_awaVlR27Q" general="_mzkdtG1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m1EScW1rEeiR_awaVlR27Q" name="index" visibility="public"/>
+            <ownedOperation xmi:id="_m1E5gG1rEeiR_awaVlR27Q" name="upload" visibility="public"/>
+            <ownedOperation xmi:id="_m1FgkG1rEeiR_awaVlR27Q" name="listAward" visibility="public"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mxrnQG1rEeiR_awaVlR27Q" name="db">
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxrnQW1rEeiR_awaVlR27Q" name="DbConfig">
+            <ownedAttribute xmi:id="_m1GHoG1rEeiR_awaVlR27Q" name="T_AWARD" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1GHoW1rEeiR_awaVlR27Q" value="T_AWARD"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1GusG1rEeiR_awaVlR27Q" name="T_AWARD_TYPE" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1GusW1rEeiR_awaVlR27Q" value="T_AWARD_TYPE"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1HVwG1rEeiR_awaVlR27Q" name="T_CLASS" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1HVwW1rEeiR_awaVlR27Q" value="T_CLASS"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1HVwm1rEeiR_awaVlR27Q" name="T_GENDER" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1HVw21rEeiR_awaVlR27Q" value="T_GENDER"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1H80G1rEeiR_awaVlR27Q" name="T_GRADE" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1H80W1rEeiR_awaVlR27Q" value="T_GRADE"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1Ij4G1rEeiR_awaVlR27Q" name="T_MAJOR" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1Ij4W1rEeiR_awaVlR27Q" value="T_MAJOR"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1Ij4m1rEeiR_awaVlR27Q" name="T_RANK" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1Ij421rEeiR_awaVlR27Q" value="T_RANK"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1JK8G1rEeiR_awaVlR27Q" name="T_REVIEW" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1JK8W1rEeiR_awaVlR27Q" value="T_REVIEW"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1JyAG1rEeiR_awaVlR27Q" name="T_ROLE" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1JyAW1rEeiR_awaVlR27Q" value="T_ROLE"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1JyAm1rEeiR_awaVlR27Q" name="T_STUDENT" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1JyA21rEeiR_awaVlR27Q" value="T_STUDENT"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1KZEG1rEeiR_awaVlR27Q" name="T_TEACHER" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1KZEW1rEeiR_awaVlR27Q" value="T_TEACHER"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1LAIG1rEeiR_awaVlR27Q" name="T_USER" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1LAIW1rEeiR_awaVlR27Q" value="T_USER"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1LAIm1rEeiR_awaVlR27Q" name="T_USER_AWARD" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1LAI21rEeiR_awaVlR27Q" value="T_USER_AWARD"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1LnMG1rEeiR_awaVlR27Q" name="T_USER_ROLE" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1LnMW1rEeiR_awaVlR27Q" value="T_USER_ROLE"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1MOQG1rEeiR_awaVlR27Q" name="V_STUDENT_INFO" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1MOQW1rEeiR_awaVlR27Q" value="V_STUDENT_INFO"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1MOQm1rEeiR_awaVlR27Q" name="V_TEACHER_INFO" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1MOQ21rEeiR_awaVlR27Q" value="V_TEACHER_INFO"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1M1UG1rEeiR_awaVlR27Q" name="V_STUDENT_AWARD" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1M1UW1rEeiR_awaVlR27Q" value="V_STUDENT_AWARD"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1NcYG1rEeiR_awaVlR27Q" name="V_TEACHER_AWARD" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1NcYW1rEeiR_awaVlR27Q" value="V_TEACHER_AWARD"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1NcYm1rEeiR_awaVlR27Q" name="SYS_URL" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1NcY21rEeiR_awaVlR27Q" value="SYS_URL"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1ODcG1rEeiR_awaVlR27Q" name="SYS_URL_ROLE" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m1ODcW1rEeiR_awaVlR27Q" value="SYS_URL_ROLE"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxsOUG1rEeiR_awaVlR27Q" name="DbRecord">
+            <generalization xmi:id="_m1ODcm1rEeiR_awaVlR27Q" general="_mzj2pW1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1OqgW1rEeiR_awaVlR27Q" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m1P4oG1rEeiR_awaVlR27Q" name="sqlBuilder" visibility="private" type="_m1PRkG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1RGwG1rEeiR_awaVlR27Q" name="tableName" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_m1Rt0G1rEeiR_awaVlR27Q" name="getSql" visibility="public">
+              <ownedParameter xmi:id="_m1Rt0W1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1SU4W1rEeiR_awaVlR27Q" name="whereEqualTo" visibility="public">
+              <ownedParameter xmi:id="_m1SU4m1rEeiR_awaVlR27Q" name="column">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1SU421rEeiR_awaVlR27Q" name="value" type="_m1SU4G1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m1SU5G1rEeiR_awaVlR27Q" name="return" type="_mxsOUG1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1S78G1rEeiR_awaVlR27Q" name="whereNotEqualTo" visibility="public">
+              <ownedParameter xmi:id="_m1S78W1rEeiR_awaVlR27Q" name="column">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1S78m1rEeiR_awaVlR27Q" name="value" type="_m1SU4G1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m1S7821rEeiR_awaVlR27Q" name="return" type="_mxsOUG1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1TjAG1rEeiR_awaVlR27Q" name="whereContains" visibility="public">
+              <ownedParameter xmi:id="_m1TjAW1rEeiR_awaVlR27Q" name="column">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1TjAm1rEeiR_awaVlR27Q" name="key" type="_m1SU4G1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m1TjA21rEeiR_awaVlR27Q" name="return" type="_mxsOUG1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1TjBG1rEeiR_awaVlR27Q" name="include" visibility="public">
+              <ownedParameter xmi:id="_m1TjBW1rEeiR_awaVlR27Q" name="foreignKey">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1TjBm1rEeiR_awaVlR27Q" name="return" type="_mxsOUG1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1UxIG1rEeiR_awaVlR27Q" name="join" visibility="public">
+              <ownedParameter xmi:id="_m1UxIW1rEeiR_awaVlR27Q" name="targetTable">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1UxIm1rEeiR_awaVlR27Q" name="onColumn">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1UxI21rEeiR_awaVlR27Q" name="targetColumn">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1UxJG1rEeiR_awaVlR27Q" name="return" type="_mxsOUG1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1VYMG1rEeiR_awaVlR27Q" name="orderByASC" visibility="public">
+              <ownedParameter xmi:id="_m1VYMW1rEeiR_awaVlR27Q" name="column">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1VYMm1rEeiR_awaVlR27Q" name="return" type="_mxsOUG1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1V_QG1rEeiR_awaVlR27Q" name="orderByDESC" visibility="public">
+              <ownedParameter xmi:id="_m1V_QW1rEeiR_awaVlR27Q" name="column">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1V_Qm1rEeiR_awaVlR27Q" name="return" type="_mxsOUG1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1XNYW1rEeiR_awaVlR27Q" name="page" visibility="public">
+              <ownedParameter xmi:id="_m1XNYm1rEeiR_awaVlR27Q" name="pageNumber">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1XNY21rEeiR_awaVlR27Q" name="pageSize">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1XNZG1rEeiR_awaVlR27Q" name="return" type="_mzlEsW1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1X0cG1rEeiR_awaVlR27Q" name="query" visibility="public">
+              <ownedParameter xmi:id="_m1X0cW1rEeiR_awaVlR27Q" name="return" type="_mzkdum1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1YbgG1rEeiR_awaVlR27Q" name="queryFirst" visibility="public">
+              <ownedParameter xmi:id="_m1YbgW1rEeiR_awaVlR27Q" name="return" type="_mzj2pW1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mxs1YG1rEeiR_awaVlR27Q" name="handler">
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxs1YW1rEeiR_awaVlR27Q" name="BasePathHandler">
+            <generalization xmi:id="_m1ZCkG1rEeiR_awaVlR27Q" general="_mzmS221rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m1ZpoW1rEeiR_awaVlR27Q" name="handle" visibility="public">
+              <ownedParameter xmi:id="_m1Zpom1rEeiR_awaVlR27Q" name="target">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m1Zpo21rEeiR_awaVlR27Q" name="request" type="_mzmS2G1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m1ZppG1rEeiR_awaVlR27Q" name="response" type="_mzmS2W1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m1ZppW1rEeiR_awaVlR27Q" name="isHandled">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m1Zppm1rEeiR_awaVlR27Q" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m1Zpp21rEeiR_awaVlR27Q"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mxtccG1rEeiR_awaVlR27Q" name="interceptor">
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxtccW1rEeiR_awaVlR27Q" name="MainLayoutInterceptor">
+            <ownedOperation xmi:id="_m1aQsG1rEeiR_awaVlR27Q" name="intercept" visibility="public">
+              <ownedParameter xmi:id="_m1aQsW1rEeiR_awaVlR27Q" name="inv" type="_mzmS3W1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxuDgG1rEeiR_awaVlR27Q" name="AuthInterceptor">
+            <ownedOperation xmi:id="_m1a3wG1rEeiR_awaVlR27Q" name="intercept" visibility="public">
+              <ownedParameter xmi:id="_m1a3wW1rEeiR_awaVlR27Q" name="inv" type="_mzmS3W1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mxuqkG1rEeiR_awaVlR27Q" name="model">
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxuqkW1rEeiR_awaVlR27Q" name="AwardType">
+            <ownedComment xmi:id="_mxvRoG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1be0W1rEeiR_awaVlR27Q" general="_m1be0G1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1cF4G1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mxuqkW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41YIG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxvRoW1rEeiR_awaVlR27Q" name="Student">
+            <ownedComment xmi:id="_mxv4sG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1cs8W1rEeiR_awaVlR27Q" general="_m1cs8G1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1dUAG1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mxvRoW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41YIm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxv4sW1rEeiR_awaVlR27Q" name="Rank">
+            <ownedComment xmi:id="_mxwfwG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1d7EW1rEeiR_awaVlR27Q" general="_m1d7EG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1d7Em1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mxv4sW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41YJG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxwfwW1rEeiR_awaVlR27Q" name="Role">
+            <ownedComment xmi:id="_mxxt4G1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1eiIW1rEeiR_awaVlR27Q" general="_m1eiIG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1fJMG1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mxwfwW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41YJm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxxt4W1rEeiR_awaVlR27Q" name="_MappingKit">
+            <ownedComment xmi:id="_mxyU8G1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal, do not modify this file. &lt;pre> Example: public void configPlugin(Plugins me) { ActiveRecordPlugin arp = new ActiveRecordPlugin(...); _MappingKit.mapping(arp); me.add(arp); } &lt;/pre>
+ */
+</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_m1fwQG1rEeiR_awaVlR27Q" name="mapping" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_m1fwQW1rEeiR_awaVlR27Q" name="arp" type="_mzkdp21rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxyU8W1rEeiR_awaVlR27Q" name="Award">
+            <ownedComment xmi:id="_mxy8AG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1gXUW1rEeiR_awaVlR27Q" general="_m1gXUG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1gXUm1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mxyU8W1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41YKG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxy8AW1rEeiR_awaVlR27Q" name="_JFinalDemoGenerator">
+            <ownedComment xmi:id="_mxzjEG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * 本 demo 仅表达最为粗浅的 jfinal 用法，更为有价值的实用的企业级用法 详见 JFinal 俱乐部: http://jfinal.com/club 在数据库表有任何变动时，运行一下 main 方法，极速响应变化进行代码重构
+ */
+</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_m1g-YG1rEeiR_awaVlR27Q" name="getDataSource" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_m1g-YW1rEeiR_awaVlR27Q" name="return" type="_mzm54W1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m1hlcG1rEeiR_awaVlR27Q" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_m1hlcW1rEeiR_awaVlR27Q" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m1hlcm1rEeiR_awaVlR27Q" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m1hlc21rEeiR_awaVlR27Q"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mxzjEW1rEeiR_awaVlR27Q" name="Grade">
+            <ownedComment xmi:id="_mx0KIG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1izkW1rEeiR_awaVlR27Q" general="_m1izkG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1izkm1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mxzjEW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41YKm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx0KIW1rEeiR_awaVlR27Q" name="SysUrl">
+            <ownedComment xmi:id="_mx0xMG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1kBsW1rEeiR_awaVlR27Q" general="_m1kBsG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1kowG1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx0KIW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41YLG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx0xMW1rEeiR_awaVlR27Q" name="Major">
+            <ownedComment xmi:id="_mx1YQG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1lP0W1rEeiR_awaVlR27Q" general="_m1lP0G1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1l24G1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx0xMW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_MG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx1YQW1rEeiR_awaVlR27Q" name="UserAward">
+            <ownedComment xmi:id="_mx1YQm1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1md8W1rEeiR_awaVlR27Q" general="_m1md8G1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1md8m1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx1YQW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_Mm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx1YQ21rEeiR_awaVlR27Q" name="UserRole">
+            <ownedComment xmi:id="_mx1_UG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1nFAW1rEeiR_awaVlR27Q" general="_m1nFAG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1nFAm1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx1YQ21rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_NG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx1_UW1rEeiR_awaVlR27Q" name="Class">
+            <ownedComment xmi:id="_mx2mYG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1nsEW1rEeiR_awaVlR27Q" general="_m1nsEG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1oTIG1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx1_UW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_Nm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx2mYW1rEeiR_awaVlR27Q" name="Gender">
+            <ownedComment xmi:id="_mx2mYm1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1o6MW1rEeiR_awaVlR27Q" general="_m1o6MG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1phQG1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx2mYW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_OG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx3NcG1rEeiR_awaVlR27Q" name="SysUrlRole">
+            <ownedComment xmi:id="_mx3NcW1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1qIUW1rEeiR_awaVlR27Q" general="_m1qIUG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1qvYG1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx3NcG1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_Om1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx3Ncm1rEeiR_awaVlR27Q" name="Review">
+            <ownedComment xmi:id="_mx30gG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1rWcW1rEeiR_awaVlR27Q" general="_m1rWcG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1r9gG1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx3Ncm1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_PG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx30gW1rEeiR_awaVlR27Q" name="Teacher">
+            <ownedComment xmi:id="_mx4bkG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1skkW1rEeiR_awaVlR27Q" general="_m1skkG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1skkm1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx30gW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_Pm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mx4bkW1rEeiR_awaVlR27Q" name="User">
+            <ownedComment xmi:id="_mx4bkm1rEeiR_awaVlR27Q">
+              <body>/** 
+ * Generated by JFinal.
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_m1tLoW1rEeiR_awaVlR27Q" general="_m1tLoG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m1tLom1rEeiR_awaVlR27Q" name="dao" visibility="public" isStatic="true" type="_mx4bkW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_QG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_mx4bk21rEeiR_awaVlR27Q" name="base">
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx4blG1rEeiR_awaVlR27Q" name="BaseSysUrlRole" isAbstract="true">
+              <ownedComment xmi:id="_mx5Co21rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx5CoG1rEeiR_awaVlR27Q" parameter="_mx5CoW1rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx5CoW1rEeiR_awaVlR27Q" parameteredElement="_mx5Com1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx5Com1rEeiR_awaVlR27Q" name="M" templateParameter="_mx5CoW1rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m1tysW1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m1uZwm1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m1uZw21rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m1uZxG1rEeiR_awaVlR27Q" name="return" type="_mx5Com1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1uZxW1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m1uZxm1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1vA0G1rEeiR_awaVlR27Q" name="setUrlId" visibility="public">
+                <ownedParameter xmi:id="_m1vA0W1rEeiR_awaVlR27Q" name="urlId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m1vA0m1rEeiR_awaVlR27Q" name="return" type="_mx5Com1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1vn4G1rEeiR_awaVlR27Q" name="getUrlId" visibility="public">
+                <ownedParameter xmi:id="_m1vn4W1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1wO8G1rEeiR_awaVlR27Q" name="setRoleId" visibility="public">
+                <ownedParameter xmi:id="_m1wO8W1rEeiR_awaVlR27Q" name="roleId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m1wO8m1rEeiR_awaVlR27Q" name="return" type="_mx5Com1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1w2AG1rEeiR_awaVlR27Q" name="getRoleId" visibility="public">
+                <ownedParameter xmi:id="_m1w2AW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx5psG1rEeiR_awaVlR27Q" name="BaseMajor" isAbstract="true">
+              <ownedComment xmi:id="_mx5ptG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx5psW1rEeiR_awaVlR27Q" parameter="_mx5psm1rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx5psm1rEeiR_awaVlR27Q" parameteredElement="_mx5ps21rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx5ps21rEeiR_awaVlR27Q" name="M" templateParameter="_mx5psm1rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m1w2Am1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m1xdEG1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m1xdEW1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m1xdEm1rEeiR_awaVlR27Q" name="return" type="_mx5ps21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1xdE21rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m1xdFG1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1yEIW1rEeiR_awaVlR27Q" name="setMajorName" visibility="public">
+                <ownedParameter xmi:id="_m1yEIm1rEeiR_awaVlR27Q" name="majorName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m1yEI21rEeiR_awaVlR27Q" name="return" type="_mx5ps21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1yrMG1rEeiR_awaVlR27Q" name="getMajorName" visibility="public">
+                <ownedParameter xmi:id="_m1yrMW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx5ptW1rEeiR_awaVlR27Q" name="BaseAward" isAbstract="true">
+              <ownedComment xmi:id="_mx6QwG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx5ptm1rEeiR_awaVlR27Q" parameter="_mx5pt21rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx5pt21rEeiR_awaVlR27Q" parameteredElement="_mx5puG1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx5puG1rEeiR_awaVlR27Q" name="M" templateParameter="_mx5pt21rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m1zSQG1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m1zSQW1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m1zSQm1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m1zSQ21rEeiR_awaVlR27Q" name="return" type="_mx5puG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1z5UG1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m1z5UW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m10gYG1rEeiR_awaVlR27Q" name="setAwardName" visibility="public">
+                <ownedParameter xmi:id="_m10gYW1rEeiR_awaVlR27Q" name="awardName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m10gYm1rEeiR_awaVlR27Q" name="return" type="_mx5puG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m11HcG1rEeiR_awaVlR27Q" name="getAwardName" visibility="public">
+                <ownedParameter xmi:id="_m11HcW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m11Hcm1rEeiR_awaVlR27Q" name="setAwardTypeId" visibility="public">
+                <ownedParameter xmi:id="_m11Hc21rEeiR_awaVlR27Q" name="awardTypeId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m11HdG1rEeiR_awaVlR27Q" name="return" type="_mx5puG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m11ugG1rEeiR_awaVlR27Q" name="getAwardTypeId" visibility="public">
+                <ownedParameter xmi:id="_m11ugW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m12VkG1rEeiR_awaVlR27Q" name="setCreateAt" visibility="public">
+                <ownedParameter xmi:id="_m12VkW1rEeiR_awaVlR27Q" name="createAt" type="_mzlryG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m12Vkm1rEeiR_awaVlR27Q" name="return" type="_mx5puG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m128oG1rEeiR_awaVlR27Q" name="getCreateAt" visibility="public">
+                <ownedParameter xmi:id="_m128oW1rEeiR_awaVlR27Q" name="return" type="_mzlryG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m13jsG1rEeiR_awaVlR27Q" name="setUpdateAt" visibility="public">
+                <ownedParameter xmi:id="_m13jsW1rEeiR_awaVlR27Q" name="updateAt" type="_mzlryG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m13jsm1rEeiR_awaVlR27Q" name="return" type="_mx5puG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m14KwG1rEeiR_awaVlR27Q" name="getUpdateAt" visibility="public">
+                <ownedParameter xmi:id="_m14KwW1rEeiR_awaVlR27Q" name="return" type="_mzlryG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx6QwW1rEeiR_awaVlR27Q" name="BaseStudent" isAbstract="true">
+              <ownedComment xmi:id="_mx630G1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx6Qwm1rEeiR_awaVlR27Q" parameter="_mx6Qw21rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx6Qw21rEeiR_awaVlR27Q" parameteredElement="_mx6QxG1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx6QxG1rEeiR_awaVlR27Q" name="M" templateParameter="_mx6Qw21rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m14Kwm1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m14x0G1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m14x0W1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m14x0m1rEeiR_awaVlR27Q" name="return" type="_mx6QxG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m14x021rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m14x1G1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m15Y4G1rEeiR_awaVlR27Q" name="setStuNo" visibility="public">
+                <ownedParameter xmi:id="_m15Y4W1rEeiR_awaVlR27Q" name="stuNo" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m15Y4m1rEeiR_awaVlR27Q" name="return" type="_mx6QxG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m15_8G1rEeiR_awaVlR27Q" name="getStuNo" visibility="public">
+                <ownedParameter xmi:id="_m15_8W1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m16nAG1rEeiR_awaVlR27Q" name="setStuName" visibility="public">
+                <ownedParameter xmi:id="_m16nAW1rEeiR_awaVlR27Q" name="stuName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m16nAm1rEeiR_awaVlR27Q" name="return" type="_mx6QxG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m17OEG1rEeiR_awaVlR27Q" name="getStuName" visibility="public">
+                <ownedParameter xmi:id="_m17OEW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m171IG1rEeiR_awaVlR27Q" name="setGenderId" visibility="public">
+                <ownedParameter xmi:id="_m171IW1rEeiR_awaVlR27Q" name="genderId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m171Im1rEeiR_awaVlR27Q" name="return" type="_mx6QxG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m18cMG1rEeiR_awaVlR27Q" name="getGenderId" visibility="public">
+                <ownedParameter xmi:id="_m18cMW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m19DQG1rEeiR_awaVlR27Q" name="setClassId" visibility="public">
+                <ownedParameter xmi:id="_m19DQW1rEeiR_awaVlR27Q" name="classId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m19DQm1rEeiR_awaVlR27Q" name="return" type="_mx6QxG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m19qUG1rEeiR_awaVlR27Q" name="getClassId" visibility="public">
+                <ownedParameter xmi:id="_m19qUW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx630W1rEeiR_awaVlR27Q" name="BaseGrade" isAbstract="true">
+              <ownedComment xmi:id="_mx7e4G1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx630m1rEeiR_awaVlR27Q" parameter="_mx63021rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx63021rEeiR_awaVlR27Q" parameteredElement="_mx631G1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx631G1rEeiR_awaVlR27Q" name="M" templateParameter="_mx63021rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m19qUm1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m19qU21rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m19qVG1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m19qVW1rEeiR_awaVlR27Q" name="return" type="_mx631G1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1-RYG1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m1-RYW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1-4cG1rEeiR_awaVlR27Q" name="setGradeName" visibility="public">
+                <ownedParameter xmi:id="_m1-4cW1rEeiR_awaVlR27Q" name="gradeName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m1-4cm1rEeiR_awaVlR27Q" name="return" type="_mx631G1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m1-4c21rEeiR_awaVlR27Q" name="getGradeName" visibility="public">
+                <ownedParameter xmi:id="_m1_fgG1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx7e4W1rEeiR_awaVlR27Q" name="BaseReview" isAbstract="true">
+              <ownedComment xmi:id="_mx8F8G1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx7e4m1rEeiR_awaVlR27Q" parameter="_mx7e421rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx7e421rEeiR_awaVlR27Q" parameteredElement="_mx7e5G1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx7e5G1rEeiR_awaVlR27Q" name="M" templateParameter="_mx7e421rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m1_fgW1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m1_fgm1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m1_fg21rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m1_fhG1rEeiR_awaVlR27Q" name="return" type="_mx7e5G1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2AGkG1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2AGkW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2AtoG1rEeiR_awaVlR27Q" name="setReviewName" visibility="public">
+                <ownedParameter xmi:id="_m2AtoW1rEeiR_awaVlR27Q" name="reviewName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2Atom1rEeiR_awaVlR27Q" name="return" type="_mx7e5G1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2B7wG1rEeiR_awaVlR27Q" name="getReviewName" visibility="public">
+                <ownedParameter xmi:id="_m2B7wW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx8F8W1rEeiR_awaVlR27Q" name="BaseClass" isAbstract="true">
+              <ownedComment xmi:id="_mx8F9W1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx8F8m1rEeiR_awaVlR27Q" parameter="_mx8F821rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx8F821rEeiR_awaVlR27Q" parameteredElement="_mx8F9G1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx8F9G1rEeiR_awaVlR27Q" name="M" templateParameter="_mx8F821rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2B7wm1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2Ci0G1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2Ci0W1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2Ci0m1rEeiR_awaVlR27Q" name="return" type="_mx8F9G1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2DJ4G1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2DJ4W1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2Dw8G1rEeiR_awaVlR27Q" name="setClassName" visibility="public">
+                <ownedParameter xmi:id="_m2Dw8W1rEeiR_awaVlR27Q" name="className" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2Dw8m1rEeiR_awaVlR27Q" name="return" type="_mx8F9G1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2EYAG1rEeiR_awaVlR27Q" name="getClassName" visibility="public">
+                <ownedParameter xmi:id="_m2EYAW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2EYAm1rEeiR_awaVlR27Q" name="setGradeId" visibility="public">
+                <ownedParameter xmi:id="_m2EYA21rEeiR_awaVlR27Q" name="gradeId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2EYBG1rEeiR_awaVlR27Q" name="return" type="_mx8F9G1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2E_EG1rEeiR_awaVlR27Q" name="getGradeId" visibility="public">
+                <ownedParameter xmi:id="_m2E_EW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2FmIG1rEeiR_awaVlR27Q" name="setMajorId" visibility="public">
+                <ownedParameter xmi:id="_m2FmIW1rEeiR_awaVlR27Q" name="majorId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2FmIm1rEeiR_awaVlR27Q" name="return" type="_mx8F9G1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2GNMG1rEeiR_awaVlR27Q" name="getMajorId" visibility="public">
+                <ownedParameter xmi:id="_m2GNMW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx8tAG1rEeiR_awaVlR27Q" name="BaseUser" isAbstract="true">
+              <ownedComment xmi:id="_mx8tBG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx8tAW1rEeiR_awaVlR27Q" parameter="_mx8tAm1rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx8tAm1rEeiR_awaVlR27Q" parameteredElement="_mx8tA21rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx8tA21rEeiR_awaVlR27Q" name="M" templateParameter="_mx8tAm1rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2G0QG1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2G0QW1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2G0Qm1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2G0Q21rEeiR_awaVlR27Q" name="return" type="_mx8tA21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2HbUG1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2HbUW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2ICYG1rEeiR_awaVlR27Q" name="setUsername" visibility="public">
+                <ownedParameter xmi:id="_m2ICYW1rEeiR_awaVlR27Q" name="username" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2ICYm1rEeiR_awaVlR27Q" name="return" type="_mx8tA21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2ICY21rEeiR_awaVlR27Q" name="getUsername" visibility="public">
+                <ownedParameter xmi:id="_m2ICZG1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2IpcG1rEeiR_awaVlR27Q" name="setPassword" visibility="public">
+                <ownedParameter xmi:id="_m2IpcW1rEeiR_awaVlR27Q" name="password" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2Ipcm1rEeiR_awaVlR27Q" name="return" type="_mx8tA21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2JQgG1rEeiR_awaVlR27Q" name="getPassword" visibility="public">
+                <ownedParameter xmi:id="_m2JQgW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2J3kG1rEeiR_awaVlR27Q" name="setCreateAt" visibility="public">
+                <ownedParameter xmi:id="_m2J3kW1rEeiR_awaVlR27Q" name="createAt" type="_mzlryG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2J3km1rEeiR_awaVlR27Q" name="return" type="_mx8tA21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2KeoG1rEeiR_awaVlR27Q" name="getCreateAt" visibility="public">
+                <ownedParameter xmi:id="_m2KeoW1rEeiR_awaVlR27Q" name="return" type="_mzlryG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2LFsG1rEeiR_awaVlR27Q" name="setUpdateAt" visibility="public">
+                <ownedParameter xmi:id="_m2LFsW1rEeiR_awaVlR27Q" name="updateAt" type="_mzlryG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2LFsm1rEeiR_awaVlR27Q" name="return" type="_mx8tA21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2LswG1rEeiR_awaVlR27Q" name="getUpdateAt" visibility="public">
+                <ownedParameter xmi:id="_m2LswW1rEeiR_awaVlR27Q" name="return" type="_mzlryG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx8tBW1rEeiR_awaVlR27Q" name="BaseRank" isAbstract="true">
+              <ownedComment xmi:id="_mx97IG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx8tBm1rEeiR_awaVlR27Q" parameter="_mx8tB21rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx8tB21rEeiR_awaVlR27Q" parameteredElement="_mx8tCG1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx8tCG1rEeiR_awaVlR27Q" name="M" templateParameter="_mx8tB21rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2Lswm1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2MT0G1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2MT0W1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2MT0m1rEeiR_awaVlR27Q" name="return" type="_mx8tCG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2M64G1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2M64W1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2M64m1rEeiR_awaVlR27Q" name="setRankName" visibility="public">
+                <ownedParameter xmi:id="_m2M6421rEeiR_awaVlR27Q" name="rankName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2M65G1rEeiR_awaVlR27Q" name="return" type="_mx8tCG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2Nh8G1rEeiR_awaVlR27Q" name="getRankName" visibility="public">
+                <ownedParameter xmi:id="_m2Nh8W1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx97IW1rEeiR_awaVlR27Q" name="BaseRole" isAbstract="true">
+              <ownedComment xmi:id="_mx-iMG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx97Im1rEeiR_awaVlR27Q" parameter="_mx97I21rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx97I21rEeiR_awaVlR27Q" parameteredElement="_mx97JG1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx97JG1rEeiR_awaVlR27Q" name="M" templateParameter="_mx97I21rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2OJAG1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2OJAW1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2OJAm1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2OJA21rEeiR_awaVlR27Q" name="return" type="_mx97JG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2OwEG1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2OwEW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2PXIG1rEeiR_awaVlR27Q" name="setRoleName" visibility="public">
+                <ownedParameter xmi:id="_m2PXIW1rEeiR_awaVlR27Q" name="roleName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2PXIm1rEeiR_awaVlR27Q" name="return" type="_mx97JG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2P-MG1rEeiR_awaVlR27Q" name="getRoleName" visibility="public">
+                <ownedParameter xmi:id="_m2P-MW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2QlQG1rEeiR_awaVlR27Q" name="setRoleNameEn" visibility="public">
+                <ownedParameter xmi:id="_m2QlQW1rEeiR_awaVlR27Q" name="roleNameEn" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2QlQm1rEeiR_awaVlR27Q" name="return" type="_mx97JG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2RMUG1rEeiR_awaVlR27Q" name="getRoleNameEn" visibility="public">
+                <ownedParameter xmi:id="_m2RMUW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx-iMW1rEeiR_awaVlR27Q" name="BaseAwardType" isAbstract="true">
+              <ownedComment xmi:id="_mx_JQG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx-iMm1rEeiR_awaVlR27Q" parameter="_mx-iM21rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx-iM21rEeiR_awaVlR27Q" parameteredElement="_mx-iNG1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx-iNG1rEeiR_awaVlR27Q" name="M" templateParameter="_mx-iM21rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2RMUm1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2RzYG1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2RzYW1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2RzYm1rEeiR_awaVlR27Q" name="return" type="_mx-iNG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2RzY21rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2RzZG1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2SacG1rEeiR_awaVlR27Q" name="setTypeName" visibility="public">
+                <ownedParameter xmi:id="_m2SacW1rEeiR_awaVlR27Q" name="typeName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2Sacm1rEeiR_awaVlR27Q" name="return" type="_mx-iNG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2TBgG1rEeiR_awaVlR27Q" name="getTypeName" visibility="public">
+                <ownedParameter xmi:id="_m2TBgW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx_JQW1rEeiR_awaVlR27Q" name="BaseTeacher" isAbstract="true">
+              <ownedComment xmi:id="_mx_wUG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx_JQm1rEeiR_awaVlR27Q" parameter="_mx_JQ21rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx_JQ21rEeiR_awaVlR27Q" parameteredElement="_mx_JRG1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx_JRG1rEeiR_awaVlR27Q" name="M" templateParameter="_mx_JQ21rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2TBgm1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2TokG1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2TokW1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2Tokm1rEeiR_awaVlR27Q" name="return" type="_mx_JRG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2Tok21rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2TolG1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2UPoG1rEeiR_awaVlR27Q" name="setTeaNo" visibility="public">
+                <ownedParameter xmi:id="_m2UPoW1rEeiR_awaVlR27Q" name="teaNo" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2UPom1rEeiR_awaVlR27Q" name="return" type="_mx_JRG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2U2sG1rEeiR_awaVlR27Q" name="getTeaNo" visibility="public">
+                <ownedParameter xmi:id="_m2U2sW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2U2sm1rEeiR_awaVlR27Q" name="setTeaName" visibility="public">
+                <ownedParameter xmi:id="_m2U2s21rEeiR_awaVlR27Q" name="teaName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2U2tG1rEeiR_awaVlR27Q" name="return" type="_mx_JRG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2VdwG1rEeiR_awaVlR27Q" name="getTeaName" visibility="public">
+                <ownedParameter xmi:id="_m2VdwW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2WE0G1rEeiR_awaVlR27Q" name="setGenderId" visibility="public">
+                <ownedParameter xmi:id="_m2WE0W1rEeiR_awaVlR27Q" name="genderId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2WE0m1rEeiR_awaVlR27Q" name="return" type="_mx_JRG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2Wr4G1rEeiR_awaVlR27Q" name="getGenderId" visibility="public">
+                <ownedParameter xmi:id="_m2Wr4W1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_mx_wUW1rEeiR_awaVlR27Q" name="BaseSysUrl" isAbstract="true">
+              <ownedComment xmi:id="_mx_wVW1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_mx_wUm1rEeiR_awaVlR27Q" parameter="_mx_wU21rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_mx_wU21rEeiR_awaVlR27Q" parameteredElement="_mx_wVG1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_mx_wVG1rEeiR_awaVlR27Q" name="M" templateParameter="_mx_wU21rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2Wr4m1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2Wr421rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2Wr5G1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2Wr5W1rEeiR_awaVlR27Q" name="return" type="_mx_wVG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2XS8G1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2XS8W1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2X6AG1rEeiR_awaVlR27Q" name="setUrl" visibility="public">
+                <ownedParameter xmi:id="_m2X6AW1rEeiR_awaVlR27Q" name="url" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2X6Am1rEeiR_awaVlR27Q" name="return" type="_mx_wVG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2ZIIG1rEeiR_awaVlR27Q" name="getUrl" visibility="public">
+                <ownedParameter xmi:id="_m2ZIIW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_myAXYG1rEeiR_awaVlR27Q" name="BaseUserRole" isAbstract="true">
+              <ownedComment xmi:id="_myAXZG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_myAXYW1rEeiR_awaVlR27Q" parameter="_myAXYm1rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_myAXYm1rEeiR_awaVlR27Q" parameteredElement="_myAXY21rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_myAXY21rEeiR_awaVlR27Q" name="M" templateParameter="_myAXYm1rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2ZvMG1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2ZvMW1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2ZvMm1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2ZvM21rEeiR_awaVlR27Q" name="return" type="_myAXY21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2a9UG1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2a9UW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2bkYG1rEeiR_awaVlR27Q" name="setUserId" visibility="public">
+                <ownedParameter xmi:id="_m2bkYW1rEeiR_awaVlR27Q" name="userId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2bkYm1rEeiR_awaVlR27Q" name="return" type="_myAXY21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2cLcG1rEeiR_awaVlR27Q" name="getUserId" visibility="public">
+                <ownedParameter xmi:id="_m2cLcW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2cygG1rEeiR_awaVlR27Q" name="setRoleId" visibility="public">
+                <ownedParameter xmi:id="_m2cygW1rEeiR_awaVlR27Q" name="roleId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2cygm1rEeiR_awaVlR27Q" name="return" type="_myAXY21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2dZkG1rEeiR_awaVlR27Q" name="getRoleId" visibility="public">
+                <ownedParameter xmi:id="_m2dZkW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_myA-cG1rEeiR_awaVlR27Q" name="BaseGender" isAbstract="true">
+              <ownedComment xmi:id="_myA-dG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_myA-cW1rEeiR_awaVlR27Q" parameter="_myA-cm1rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_myA-cm1rEeiR_awaVlR27Q" parameteredElement="_myA-c21rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_myA-c21rEeiR_awaVlR27Q" name="M" templateParameter="_myA-cm1rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2dZkm1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2eAoG1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2eAoW1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2eAom1rEeiR_awaVlR27Q" name="return" type="_myA-c21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2eAo21rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2eApG1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2ensG1rEeiR_awaVlR27Q" name="setGenderName" visibility="public">
+                <ownedParameter xmi:id="_m2ensW1rEeiR_awaVlR27Q" name="genderName" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2ensm1rEeiR_awaVlR27Q" name="return" type="_myA-c21rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2fOwG1rEeiR_awaVlR27Q" name="getGenderName" visibility="public">
+                <ownedParameter xmi:id="_m2fOwW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_myA-dW1rEeiR_awaVlR27Q" name="BaseUserAward" isAbstract="true">
+              <ownedComment xmi:id="_myBlgG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * Generated by JFinal, do not modify this file.
+ */
+</body>
+              </ownedComment>
+              <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_myA-dm1rEeiR_awaVlR27Q" parameter="_myA-d21rEeiR_awaVlR27Q">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_myA-d21rEeiR_awaVlR27Q" parameteredElement="_myA-eG1rEeiR_awaVlR27Q">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_myA-eG1rEeiR_awaVlR27Q" name="M" templateParameter="_myA-d21rEeiR_awaVlR27Q"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+              <generalization xmi:id="_m2fOwm1rEeiR_awaVlR27Q" general="_m1tysG1rEeiR_awaVlR27Q"/>
+              <ownedOperation xmi:id="_m2f10G1rEeiR_awaVlR27Q" name="setId" visibility="public">
+                <ownedParameter xmi:id="_m2f10W1rEeiR_awaVlR27Q" name="id" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2f10m1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2gc4G1rEeiR_awaVlR27Q" name="getId" visibility="public">
+                <ownedParameter xmi:id="_m2gc4W1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2hD8G1rEeiR_awaVlR27Q" name="setAwardTime" visibility="public">
+                <ownedParameter xmi:id="_m2hD8W1rEeiR_awaVlR27Q" name="awardTime" type="_mzlryG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2hD8m1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2hrAG1rEeiR_awaVlR27Q" name="getAwardTime" visibility="public">
+                <ownedParameter xmi:id="_m2hrAW1rEeiR_awaVlR27Q" name="return" type="_mzlryG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2iSEG1rEeiR_awaVlR27Q" name="setAwardPlace" visibility="public">
+                <ownedParameter xmi:id="_m2iSEW1rEeiR_awaVlR27Q" name="awardPlace" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2iSEm1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2i5IG1rEeiR_awaVlR27Q" name="getAwardPlace" visibility="public">
+                <ownedParameter xmi:id="_m2i5IW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2jgMG1rEeiR_awaVlR27Q" name="setCreateAt" visibility="public">
+                <ownedParameter xmi:id="_m2jgMW1rEeiR_awaVlR27Q" name="createAt" type="_mzlryG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2jgMm1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2kHQG1rEeiR_awaVlR27Q" name="getCreateAt" visibility="public">
+                <ownedParameter xmi:id="_m2kHQW1rEeiR_awaVlR27Q" name="return" type="_mzlryG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2kuUG1rEeiR_awaVlR27Q" name="setReviewAt" visibility="public">
+                <ownedParameter xmi:id="_m2kuUW1rEeiR_awaVlR27Q" name="reviewAt" type="_mzlryG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2kuUm1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2lVYG1rEeiR_awaVlR27Q" name="getReviewAt" visibility="public">
+                <ownedParameter xmi:id="_m2lVYW1rEeiR_awaVlR27Q" name="return" type="_mzlryG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2l8cG1rEeiR_awaVlR27Q" name="setImagePath" visibility="public">
+                <ownedParameter xmi:id="_m2l8cW1rEeiR_awaVlR27Q" name="imagePath" type="_m1yEIG1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2l8cm1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2mjgG1rEeiR_awaVlR27Q" name="getImagePath" visibility="public">
+                <ownedParameter xmi:id="_m2mjgW1rEeiR_awaVlR27Q" name="return" type="_m1yEIG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2nKkG1rEeiR_awaVlR27Q" name="setUserId" visibility="public">
+                <ownedParameter xmi:id="_m2nKkW1rEeiR_awaVlR27Q" name="userId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2nKkm1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2nxoG1rEeiR_awaVlR27Q" name="getUserId" visibility="public">
+                <ownedParameter xmi:id="_m2nxoW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2oYsG1rEeiR_awaVlR27Q" name="setAwardId" visibility="public">
+                <ownedParameter xmi:id="_m2oYsW1rEeiR_awaVlR27Q" name="awardId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2oYsm1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2o_wG1rEeiR_awaVlR27Q" name="getAwardId" visibility="public">
+                <ownedParameter xmi:id="_m2o_wW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2pm0G1rEeiR_awaVlR27Q" name="setRankId" visibility="public">
+                <ownedParameter xmi:id="_m2pm0W1rEeiR_awaVlR27Q" name="rankId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2pm0m1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2qN4G1rEeiR_awaVlR27Q" name="getRankId" visibility="public">
+                <ownedParameter xmi:id="_m2qN4W1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2q08G1rEeiR_awaVlR27Q" name="setReviewId" visibility="public">
+                <ownedParameter xmi:id="_m2q08W1rEeiR_awaVlR27Q" name="reviewId" type="_m1uZwW1rEeiR_awaVlR27Q"/>
+                <ownedParameter xmi:id="_m2q08m1rEeiR_awaVlR27Q" name="return" type="_myA-eG1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m2sDEG1rEeiR_awaVlR27Q" name="getReviewId" visibility="public">
+                <ownedParameter xmi:id="_m2sDEW1rEeiR_awaVlR27Q" name="return" type="_m1uZwW1rEeiR_awaVlR27Q" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41YIG1rEeiR_awaVlR27Q" memberEnd="_m1cF4G1rEeiR_awaVlR27Q _m41YIW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41YIW1rEeiR_awaVlR27Q" name="AwardType" type="_mxuqkW1rEeiR_awaVlR27Q" association="_m41YIG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41YIm1rEeiR_awaVlR27Q" memberEnd="_m1dUAG1rEeiR_awaVlR27Q _m41YI21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41YI21rEeiR_awaVlR27Q" name="Student" type="_mxvRoW1rEeiR_awaVlR27Q" association="_m41YIm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41YJG1rEeiR_awaVlR27Q" memberEnd="_m1d7Em1rEeiR_awaVlR27Q _m41YJW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41YJW1rEeiR_awaVlR27Q" name="Rank" type="_mxv4sW1rEeiR_awaVlR27Q" association="_m41YJG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41YJm1rEeiR_awaVlR27Q" memberEnd="_m1fJMG1rEeiR_awaVlR27Q _m41YJ21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41YJ21rEeiR_awaVlR27Q" name="Role" type="_mxwfwW1rEeiR_awaVlR27Q" association="_m41YJm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41YKG1rEeiR_awaVlR27Q" memberEnd="_m1gXUm1rEeiR_awaVlR27Q _m41YKW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41YKW1rEeiR_awaVlR27Q" name="Award" type="_mxyU8W1rEeiR_awaVlR27Q" association="_m41YKG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41YKm1rEeiR_awaVlR27Q" memberEnd="_m1izkm1rEeiR_awaVlR27Q _m41YK21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41YK21rEeiR_awaVlR27Q" name="Grade" type="_mxzjEW1rEeiR_awaVlR27Q" association="_m41YKm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41YLG1rEeiR_awaVlR27Q" memberEnd="_m1kowG1rEeiR_awaVlR27Q _m41YLW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41YLW1rEeiR_awaVlR27Q" name="SysUrl" type="_mx0KIW1rEeiR_awaVlR27Q" association="_m41YLG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_MG1rEeiR_awaVlR27Q" memberEnd="_m1l24G1rEeiR_awaVlR27Q _m41_MW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_MW1rEeiR_awaVlR27Q" name="Major" type="_mx0xMW1rEeiR_awaVlR27Q" association="_m41_MG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_Mm1rEeiR_awaVlR27Q" memberEnd="_m1md8m1rEeiR_awaVlR27Q _m41_M21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_M21rEeiR_awaVlR27Q" name="UserAward" type="_mx1YQW1rEeiR_awaVlR27Q" association="_m41_Mm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_NG1rEeiR_awaVlR27Q" memberEnd="_m1nFAm1rEeiR_awaVlR27Q _m41_NW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_NW1rEeiR_awaVlR27Q" name="UserRole" type="_mx1YQ21rEeiR_awaVlR27Q" association="_m41_NG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_Nm1rEeiR_awaVlR27Q" memberEnd="_m1oTIG1rEeiR_awaVlR27Q _m41_N21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_N21rEeiR_awaVlR27Q" name="Class" type="_mx1_UW1rEeiR_awaVlR27Q" association="_m41_Nm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_OG1rEeiR_awaVlR27Q" memberEnd="_m1phQG1rEeiR_awaVlR27Q _m41_OW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_OW1rEeiR_awaVlR27Q" name="Gender" type="_mx2mYW1rEeiR_awaVlR27Q" association="_m41_OG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_Om1rEeiR_awaVlR27Q" memberEnd="_m1qvYG1rEeiR_awaVlR27Q _m41_O21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_O21rEeiR_awaVlR27Q" name="SysUrlRole" type="_mx3NcG1rEeiR_awaVlR27Q" association="_m41_Om1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_PG1rEeiR_awaVlR27Q" memberEnd="_m1r9gG1rEeiR_awaVlR27Q _m41_PW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_PW1rEeiR_awaVlR27Q" name="Review" type="_mx3Ncm1rEeiR_awaVlR27Q" association="_m41_PG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_Pm1rEeiR_awaVlR27Q" memberEnd="_m1skkm1rEeiR_awaVlR27Q _m41_P21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_P21rEeiR_awaVlR27Q" name="Teacher" type="_mx30gW1rEeiR_awaVlR27Q" association="_m41_Pm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_QG1rEeiR_awaVlR27Q" memberEnd="_m1tLom1rEeiR_awaVlR27Q _m41_QW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_QW1rEeiR_awaVlR27Q" name="User" type="_mx4bkW1rEeiR_awaVlR27Q" association="_m41_QG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_myBlgW1rEeiR_awaVlR27Q" name="route">
+          <packagedElement xmi:type="uml:Class" xmi:id="_myBlgm1rEeiR_awaVlR27Q" name="MainRoute">
+            <generalization xmi:id="_m2sqIG1rEeiR_awaVlR27Q" general="_mzkdoW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m2tRMG1rEeiR_awaVlR27Q" name="config" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myCMkG1rEeiR_awaVlR27Q" name="IndexRoute">
+            <generalization xmi:id="_m2t4QG1rEeiR_awaVlR27Q" general="_mzkdoW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m2t4QW1rEeiR_awaVlR27Q" name="config" visibility="public"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_myCzoG1rEeiR_awaVlR27Q" name="service">
+          <packagedElement xmi:type="uml:Class" xmi:id="_myCzoW1rEeiR_awaVlR27Q" name="UserService">
+            <ownedComment xmi:id="_myDasG1rEeiR_awaVlR27Q">
+              <body>/** 
+ * 用户相关业务类
+ * @author WYF
+ */
+</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_m2vGYG1rEeiR_awaVlR27Q" name="me" visibility="public" isStatic="true" type="_myCzoW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_Qm1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m2wUgG1rEeiR_awaVlR27Q" name="ROLE_ADMIN" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m2wUgW1rEeiR_awaVlR27Q" value="admin"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m2yJsG1rEeiR_awaVlR27Q" name="ROLE_LEADER" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m2yJsW1rEeiR_awaVlR27Q" value="leader"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m20l8G1rEeiR_awaVlR27Q" name="ROLE_INSTRUCTOR" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m20l8W1rEeiR_awaVlR27Q" value="instructor"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m23CMG1rEeiR_awaVlR27Q" name="ROLE_TEACHER" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m23CMW1rEeiR_awaVlR27Q" value="teacher"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m243YG1rEeiR_awaVlR27Q" name="ROLE_STUDENT" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_m243YW1rEeiR_awaVlR27Q" value="student"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_m26FgG1rEeiR_awaVlR27Q" name="getCurrentUser" visibility="public">
+              <ownedComment xmi:id="_m26skG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * 获得当前登录用户的基本信息
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_m26FgW1rEeiR_awaVlR27Q" name="return" type="_mzj2pW1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m26skW1rEeiR_awaVlR27Q" name="getCurrentUserInfo" visibility="public">
+              <ownedComment xmi:id="_m27ToG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * 获得当前登录用户的详细信息
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_m26skm1rEeiR_awaVlR27Q" name="return" type="_mzj2pW1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m27ToW1rEeiR_awaVlR27Q" name="login" visibility="public">
+              <ownedComment xmi:id="_m276sG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * 用户登录
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_m27Tom1rEeiR_awaVlR27Q" name="username">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m27To21rEeiR_awaVlR27Q" name="password">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m27TpG1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m28hwG1rEeiR_awaVlR27Q" name="logout" visibility="public">
+              <ownedComment xmi:id="_m29I0G1rEeiR_awaVlR27Q">
+                <body>/** 
+ * 用户退出登录
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_m28hwW1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m29I0W1rEeiR_awaVlR27Q" name="resetPassword" visibility="public">
+              <ownedParameter xmi:id="_m29I0m1rEeiR_awaVlR27Q" name="ids">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m29I021rEeiR_awaVlR27Q" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m29I1G1rEeiR_awaVlR27Q"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m29I1W1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m2-W8G1rEeiR_awaVlR27Q" name="setRole" visibility="public">
+              <ownedParameter xmi:id="_m2-W8W1rEeiR_awaVlR27Q" name="ids">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m2-W8m1rEeiR_awaVlR27Q" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2-W821rEeiR_awaVlR27Q"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m2-W9G1rEeiR_awaVlR27Q" name="roleId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m2-W9W1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m2--AG1rEeiR_awaVlR27Q" name="updatePassword" visibility="public">
+              <ownedComment xmi:id="_m2_lEG1rEeiR_awaVlR27Q">
+                <body>/** 
+ * 修改密码
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_m2--AW1rEeiR_awaVlR27Q" name="userId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m2--Am1rEeiR_awaVlR27Q" name="newPass">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m2--A21rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myDasW1rEeiR_awaVlR27Q" name="ExportService">
+            <ownedAttribute xmi:id="_m3AzMG1rEeiR_awaVlR27Q" name="me" visibility="public" isStatic="true" type="_myDasW1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_RG1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m3DPcG1rEeiR_awaVlR27Q" name="BASE_DOWNLOAD_PATH" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m3FEoG1rEeiR_awaVlR27Q" name="XLS_PATH" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m3Hg4G1rEeiR_awaVlR27Q" name="ZIP_PATH" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_m3JWEG1rEeiR_awaVlR27Q" name="exportStudentAward" visibility="public">
+              <ownedParameter xmi:id="_m3JWEW1rEeiR_awaVlR27Q" name="records" type="_mzkdum1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m3JWEm1rEeiR_awaVlR27Q" name="return" type="_mzkdt21rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3KkMG1rEeiR_awaVlR27Q" name="exportTeacherAward" visibility="public">
+              <ownedParameter xmi:id="_m3KkMW1rEeiR_awaVlR27Q" name="records" type="_mzkdum1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m3KkMm1rEeiR_awaVlR27Q" name="return" type="_mzkdt21rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3LyUG1rEeiR_awaVlR27Q" name="exportStudentZIP" visibility="public">
+              <ownedParameter xmi:id="_m3LyUW1rEeiR_awaVlR27Q" name="records" type="_mzkdum1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m3LyUm1rEeiR_awaVlR27Q" name="return" type="_mzkdt21rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3NngG1rEeiR_awaVlR27Q" name="exportTeacherZIP" visibility="public">
+              <ownedParameter xmi:id="_m3NngW1rEeiR_awaVlR27Q" name="records" type="_mzkdum1rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m3Nngm1rEeiR_awaVlR27Q" name="return" type="_mzkdt21rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myFP4G1rEeiR_awaVlR27Q" name="ImportService">
+            <ownedAttribute xmi:id="_m3QDwG1rEeiR_awaVlR27Q" name="me" visibility="public" isStatic="true" type="_myFP4G1rEeiR_awaVlR27Q" isReadOnly="true" association="_m41_Rm1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3Qq0G1rEeiR_awaVlR27Q" name="importAward" visibility="public">
+              <ownedParameter xmi:id="_m3Qq0W1rEeiR_awaVlR27Q" name="xls" type="_mzkdt21rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m3Qq0m1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3R48G1rEeiR_awaVlR27Q" name="importStu" visibility="public">
+              <ownedParameter xmi:id="_m3R48W1rEeiR_awaVlR27Q" name="xls" type="_mzkdt21rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m3R48m1rEeiR_awaVlR27Q" name="classId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_m3R4821rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3THEG1rEeiR_awaVlR27Q" name="importTea" visibility="public">
+              <ownedParameter xmi:id="_m3THEW1rEeiR_awaVlR27Q" name="xls" type="_mzkdt21rEeiR_awaVlR27Q"/>
+              <ownedParameter xmi:id="_m3THEm1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_Qm1rEeiR_awaVlR27Q" memberEnd="_m2vGYG1rEeiR_awaVlR27Q _m41_Q21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_Q21rEeiR_awaVlR27Q" name="UserService" type="_myCzoW1rEeiR_awaVlR27Q" association="_m41_Qm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_RG1rEeiR_awaVlR27Q" memberEnd="_m3AzMG1rEeiR_awaVlR27Q _m41_RW1rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_RW1rEeiR_awaVlR27Q" name="ExportService" type="_myDasW1rEeiR_awaVlR27Q" association="_m41_RG1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_m41_Rm1rEeiR_awaVlR27Q" memberEnd="_m3QDwG1rEeiR_awaVlR27Q _m41_R21rEeiR_awaVlR27Q">
+            <ownedEnd xmi:id="_m41_R21rEeiR_awaVlR27Q" name="ImportService" type="_myFP4G1rEeiR_awaVlR27Q" association="_m41_Rm1rEeiR_awaVlR27Q"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_myHFEG1rEeiR_awaVlR27Q" name="validator">
+          <packagedElement xmi:type="uml:Class" xmi:id="_myHFEW1rEeiR_awaVlR27Q" name="UpdatePasswordValidator">
+            <generalization xmi:id="_m3UVMG1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3UVMW1rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3UVMm1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3U8QG1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3U8QW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myHsIG1rEeiR_awaVlR27Q" name="LoginValidator">
+            <generalization xmi:id="_m3VjUG1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3VjUW1rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3VjUm1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3WKYG1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3WKYW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myITMG1rEeiR_awaVlR27Q" name="ImportStuValidator">
+            <generalization xmi:id="_m3WKYm1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3WxcG1rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3WxcW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3XYgG1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3XYgW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myITMW1rEeiR_awaVlR27Q" name="UploadValidator">
+            <generalization xmi:id="_m3XYgm1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3XYg21rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3XYhG1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3X_kG1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3X_kW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myI6QG1rEeiR_awaVlR27Q" name="DeleteAwardValidator">
+            <generalization xmi:id="_m3YmoG1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3YmoW1rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3Ymom1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3Z0wG1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3Z0wW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myI6QW1rEeiR_awaVlR27Q" name="SetRoleValidator">
+            <generalization xmi:id="_m3Z0wm1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3ab0G1rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3ab0W1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3bC4G1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3bC4W1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myJhUG1rEeiR_awaVlR27Q" name="ResetValidator">
+            <generalization xmi:id="_m3bp8G1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3cRAG1rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3cRAW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3c4EG1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3c4EW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myJhUW1rEeiR_awaVlR27Q" name="UpdateAwardValidator">
+            <generalization xmi:id="_m3dfIG1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3dfIW1rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3dfIm1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3etQG1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3etQW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myKIYG1rEeiR_awaVlR27Q" name="AddAwardValidator">
+            <generalization xmi:id="_m3fUUG1rEeiR_awaVlR27Q" general="_mzp9MW1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3fUUW1rEeiR_awaVlR27Q" name="validate" visibility="protected">
+              <ownedParameter xmi:id="_m3fUUm1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3f7YG1rEeiR_awaVlR27Q" name="handleError" visibility="protected">
+              <ownedParameter xmi:id="_m3f7YW1rEeiR_awaVlR27Q" name="c" type="_mzkdtG1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_myKIYW1rEeiR_awaVlR27Q" name="vo">
+          <packagedElement xmi:type="uml:Class" xmi:id="_myKIYm1rEeiR_awaVlR27Q" name="AjaxResult">
+            <ownedAttribute xmi:id="_m3gicG1rEeiR_awaVlR27Q" name="CODE_SUCCESS" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_m3gicW1rEeiR_awaVlR27Q"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m3hJgG1rEeiR_awaVlR27Q" name="CODE_ERROR" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m3hwkG1rEeiR_awaVlR27Q" name="code" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m3iXoG1rEeiR_awaVlR27Q" name="msg" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_m3i-sG1rEeiR_awaVlR27Q" name="getCode" visibility="public">
+              <ownedParameter xmi:id="_m3i-sW1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3i-sm1rEeiR_awaVlR27Q" name="setCode" visibility="public">
+              <ownedParameter xmi:id="_m3i-s21rEeiR_awaVlR27Q" name="code">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3jlwG1rEeiR_awaVlR27Q" name="getMsg" visibility="public">
+              <ownedParameter xmi:id="_m3jlwW1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3kM0G1rEeiR_awaVlR27Q" name="setMsg" visibility="public">
+              <ownedParameter xmi:id="_m3kM0W1rEeiR_awaVlR27Q" name="msg">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_myKvcG1rEeiR_awaVlR27Q" name="LayUITableResult">
+            <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_myKvcW1rEeiR_awaVlR27Q" parameter="_myKvcm1rEeiR_awaVlR27Q">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_myKvcm1rEeiR_awaVlR27Q" parameteredElement="_myKvc21rEeiR_awaVlR27Q">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_myKvc21rEeiR_awaVlR27Q" name="T" templateParameter="_myKvcm1rEeiR_awaVlR27Q"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+            <generalization xmi:id="_m3kM0m1rEeiR_awaVlR27Q" general="_myKIYm1rEeiR_awaVlR27Q"/>
+            <ownedAttribute xmi:id="_m3kz4G1rEeiR_awaVlR27Q" name="count" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_m3la8G1rEeiR_awaVlR27Q" name="data" visibility="private" type="_m3kz4W1rEeiR_awaVlR27Q"/>
+            <ownedOperation xmi:id="_m3la8W1rEeiR_awaVlR27Q" name="getCount" visibility="public">
+              <ownedParameter xmi:id="_m3la8m1rEeiR_awaVlR27Q" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3mCAG1rEeiR_awaVlR27Q" name="setCount" visibility="public">
+              <ownedParameter xmi:id="_m3mCAW1rEeiR_awaVlR27Q" name="count">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3mpEG1rEeiR_awaVlR27Q" name="getData" visibility="public">
+              <ownedParameter xmi:id="_m3mpEW1rEeiR_awaVlR27Q" name="return" type="_mzkdum1rEeiR_awaVlR27Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_m3nQIG1rEeiR_awaVlR27Q" name="setData" visibility="public">
+              <ownedParameter xmi:id="_m3nQIW1rEeiR_awaVlR27Q" name="data" type="_mzkdum1rEeiR_awaVlR27Q"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzj2oG1rEeiR_awaVlR27Q" name="jfinal">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzj2oW1rEeiR_awaVlR27Q" name="kit">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2om1rEeiR_awaVlR27Q" name="StrKit"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdpm1rEeiR_awaVlR27Q" name="PropKit"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkduG1rEeiR_awaVlR27Q" name="PathKit"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzj2o21rEeiR_awaVlR27Q" name="plugin">
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzj2pG1rEeiR_awaVlR27Q" name="activerecord">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2pW1rEeiR_awaVlR27Q" name="Record"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdp21rEeiR_awaVlR27Q" name="ActiveRecordPlugin"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_mzkdqG1rEeiR_awaVlR27Q" name="dialect">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdqW1rEeiR_awaVlR27Q" name="MysqlDialect"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzlEsW1rEeiR_awaVlR27Q" name="Page"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzlrwG1rEeiR_awaVlR27Q" name="Db"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzlrx21rEeiR_awaVlR27Q" name="IAtom"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzmS1G1rEeiR_awaVlR27Q" name="SqlPara"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_mzm54m1rEeiR_awaVlR27Q" name="generator">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzm5421rEeiR_awaVlR27Q" name="Generator"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzng8G1rEeiR_awaVlR27Q" name="Model"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzng8W1rEeiR_awaVlR27Q" name="IBean"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzkdqm1rEeiR_awaVlR27Q" name="druid">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdq21rEeiR_awaVlR27Q" name="DruidPlugin"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzkdrG1rEeiR_awaVlR27Q" name="ehcache">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdrW1rEeiR_awaVlR27Q" name="EhCachePlugin"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzj2pm1rEeiR_awaVlR27Q" name="config">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2p21rEeiR_awaVlR27Q" name="Constants"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2qG1rEeiR_awaVlR27Q" name="Handlers"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2qW1rEeiR_awaVlR27Q" name="Interceptors"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2qm1rEeiR_awaVlR27Q" name="JFinalConfig"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdoG1rEeiR_awaVlR27Q" name="Plugins"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdoW1rEeiR_awaVlR27Q" name="Routes"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzkdom1rEeiR_awaVlR27Q" name="core">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdo21rEeiR_awaVlR27Q" name="JFinal"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdtG1rEeiR_awaVlR27Q" name="Controller"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzkdpG1rEeiR_awaVlR27Q" name="json">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdpW1rEeiR_awaVlR27Q" name="FastJsonFactory"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzkdrm1rEeiR_awaVlR27Q" name="render">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdr21rEeiR_awaVlR27Q" name="ViewType"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzkdsG1rEeiR_awaVlR27Q" name="template">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdsW1rEeiR_awaVlR27Q" name="Engine"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzkdsm1rEeiR_awaVlR27Q" name="source">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzkds21rEeiR_awaVlR27Q" name="ClassPathSourceFactory"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzkdu21rEeiR_awaVlR27Q" name="aop">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdvG1rEeiR_awaVlR27Q" name="Before"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzmS3G1rEeiR_awaVlR27Q" name="Interceptor"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzmS3W1rEeiR_awaVlR27Q" name="Invocation"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzmS2m1rEeiR_awaVlR27Q" name="handler">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzmS221rEeiR_awaVlR27Q" name="Handler"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzp9MG1rEeiR_awaVlR27Q" name="validate">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzp9MW1rEeiR_awaVlR27Q" name="Validator"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mzj2kG1rEeiR_awaVlR27Q" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzj2kW1rEeiR_awaVlR27Q" name="apache">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzj2km1rEeiR_awaVlR27Q" name="shiro">
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzj2k21rEeiR_awaVlR27Q" name="authc">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2lG1rEeiR_awaVlR27Q" name="AuthenticationException"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2lW1rEeiR_awaVlR27Q" name="AuthenticationInfo"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2lm1rEeiR_awaVlR27Q" name="AuthenticationToken"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2l21rEeiR_awaVlR27Q" name="SimpleAuthenticationInfo"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2mG1rEeiR_awaVlR27Q" name="UsernamePasswordToken"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzj2mW1rEeiR_awaVlR27Q" name="authz">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2mm1rEeiR_awaVlR27Q" name="AuthorizationInfo"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2m21rEeiR_awaVlR27Q" name="SimpleAuthorizationInfo"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzj2nG1rEeiR_awaVlR27Q" name="realm">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2nW1rEeiR_awaVlR27Q" name="AuthorizingRealm"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzj2nm1rEeiR_awaVlR27Q" name="subject">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzj2n21rEeiR_awaVlR27Q" name="PrincipalCollection"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzovEW1rEeiR_awaVlR27Q" name="Subject"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzlEsG1rEeiR_awaVlR27Q" name="SecurityUtils"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzpWJW1rEeiR_awaVlR27Q" name="poi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzpWJm1rEeiR_awaVlR27Q" name="hssf">
+          <packagedElement xmi:type="uml:Package" xmi:id="_mzpWJ21rEeiR_awaVlR27Q" name="usermodel">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWKG1rEeiR_awaVlR27Q" name="HSSFCell"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWKW1rEeiR_awaVlR27Q" name="HSSFCellStyle"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWKm1rEeiR_awaVlR27Q" name="HSSFFont"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWK21rEeiR_awaVlR27Q" name="HSSFRow"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWLG1rEeiR_awaVlR27Q" name="HSSFSheet"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWLW1rEeiR_awaVlR27Q" name="HSSFWorkbook"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzpWLm1rEeiR_awaVlR27Q" name="ss">
+          <packagedElement xmi:type="uml:Package" xmi:id="_mzpWL21rEeiR_awaVlR27Q" name="usermodel">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWMG1rEeiR_awaVlR27Q" name="VerticalAlignment"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzpWMW1rEeiR_awaVlR27Q" name="tools">
+        <packagedElement xmi:type="uml:Package" xmi:id="_mzpWMm1rEeiR_awaVlR27Q" name="ant">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWM21rEeiR_awaVlR27Q" name="Project"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_mzpWNG1rEeiR_awaVlR27Q" name="taskdefs">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWNW1rEeiR_awaVlR27Q" name="Zip"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_mzpWNm1rEeiR_awaVlR27Q" name="types">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWN21rEeiR_awaVlR27Q" name="FileSet"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mzkdtW1rEeiR_awaVlR27Q" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzkdtm1rEeiR_awaVlR27Q" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdt21rEeiR_awaVlR27Q" name="File"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWIG1rEeiR_awaVlR27Q" name="IOException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWOG1rEeiR_awaVlR27Q" name="FileInputStream"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzkduW1rEeiR_awaVlR27Q" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzkdum1rEeiR_awaVlR27Q" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzlrw21rEeiR_awaVlR27Q" name="HashMap"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzlrxG1rEeiR_awaVlR27Q" name="Map"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzlryG1rEeiR_awaVlR27Q" name="Date"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzovEG1rEeiR_awaVlR27Q" name="ArrayList"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzlrwW1rEeiR_awaVlR27Q" name="text">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzlrwm1rEeiR_awaVlR27Q" name="SimpleDateFormat"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzlrxW1rEeiR_awaVlR27Q" name="sql">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzlrxm1rEeiR_awaVlR27Q" name="SQLException"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzpWIW1rEeiR_awaVlR27Q" name="nio">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzpWIm1rEeiR_awaVlR27Q" name="file">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWI21rEeiR_awaVlR27Q" name="Files"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzpWJG1rEeiR_awaVlR27Q" name="StandardCopyOption"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_m1uZwG1rEeiR_awaVlR27Q" name="lang">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_m1uZwW1rEeiR_awaVlR27Q" name="Integer"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_m1yEIG1rEeiR_awaVlR27Q" name="String"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mzmS0G1rEeiR_awaVlR27Q" name="net">
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzmS0W1rEeiR_awaVlR27Q" name="coobird">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzmS0m1rEeiR_awaVlR27Q" name="thumbnailator">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzmS021rEeiR_awaVlR27Q" name="Thumbnails"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mzmS1W1rEeiR_awaVlR27Q" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzmS1m1rEeiR_awaVlR27Q" name="servlet">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzmS121rEeiR_awaVlR27Q" name="http">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzmS2G1rEeiR_awaVlR27Q" name="HttpServletRequest"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mzmS2W1rEeiR_awaVlR27Q" name="HttpServletResponse"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mzm54G1rEeiR_awaVlR27Q" name="sql">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mzm54W1rEeiR_awaVlR27Q" name="DataSource"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1PRkG1rEeiR_awaVlR27Q" name="StringBuilder"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1SU4G1rEeiR_awaVlR27Q" name="Object"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1be0G1rEeiR_awaVlR27Q" name="BaseAwardType&lt;AwardType>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1cs8G1rEeiR_awaVlR27Q" name="BaseStudent&lt;Student>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1d7EG1rEeiR_awaVlR27Q" name="BaseRank&lt;Rank>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1eiIG1rEeiR_awaVlR27Q" name="BaseRole&lt;Role>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1gXUG1rEeiR_awaVlR27Q" name="BaseAward&lt;Award>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1izkG1rEeiR_awaVlR27Q" name="BaseGrade&lt;Grade>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1kBsG1rEeiR_awaVlR27Q" name="BaseSysUrl&lt;SysUrl>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1lP0G1rEeiR_awaVlR27Q" name="BaseMajor&lt;Major>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1md8G1rEeiR_awaVlR27Q" name="BaseUserAward&lt;UserAward>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1nFAG1rEeiR_awaVlR27Q" name="BaseUserRole&lt;UserRole>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1nsEG1rEeiR_awaVlR27Q" name="BaseClass&lt;Class>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1o6MG1rEeiR_awaVlR27Q" name="BaseGender&lt;Gender>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1qIUG1rEeiR_awaVlR27Q" name="BaseSysUrlRole&lt;SysUrlRole>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1rWcG1rEeiR_awaVlR27Q" name="BaseReview&lt;Review>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1skkG1rEeiR_awaVlR27Q" name="BaseTeacher&lt;Teacher>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1tLoG1rEeiR_awaVlR27Q" name="BaseUser&lt;User>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m1tysG1rEeiR_awaVlR27Q" name="Model&lt;M>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m3kz4W1rEeiR_awaVlR27Q" name="List&lt;T>"/>
+</uml:Model>

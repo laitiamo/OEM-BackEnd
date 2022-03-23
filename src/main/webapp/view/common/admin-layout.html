@@ -1,0 +1,346 @@
+#define adminlayout()
+<!doctype html>
+<html class="no-js fixed-layout">
+
+	<head>
+		<base href="#(basePath)" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>教育教学成果统计系统</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="icon" type="image/png" href="assets/amazeui/i/favicon.png">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/amazeui/i/app-icon72x72@2x.png">
+	
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="教育教学成果统计系统" />
+		<link rel="apple-touch-icon-precomposed" href="assets/amazeui/i/app-icon72x72@2x.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/amazeui/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="assets/layui/css/layui.css">
+		<link rel="stylesheet" href="assets/amazeui/css/amazeui.min.css">
+		<link rel="stylesheet" href="assets/amazeui/css/app.css">
+		<link rel="stylesheet" href="assets/amazeui/css/admin.css">
+		<style>
+			.color-grey{
+				color:grey;
+			}
+			.hiddenDiv{
+				display:none;
+			}
+			.fromElem{
+				width:250px;
+				float:left;
+				margin-right:30px;
+				margin-bottom:0rem;
+			}
+			.height34{
+				height:33px;
+			}
+			.width250{
+				width:250px;
+			}
+			.zoom-out img{
+				margin: 0 auto;
+				max-height:200px;
+				cursor: pointer;
+				transition: all 0.6s;
+			}
+			.zoom-out:hover img{
+				transform: scale(1.8);
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="am-topbar am-topbar-inverse admin-header" id="main_header">
+			<div class="am-topbar-brand">
+				<strong>ETA</strong>
+				<small>教育教学成果统计系统</small>
+			</div>
+
+			<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}">
+      <span class="am-sr-only">导航切换</span>
+      <span class="am-icon-bars"></span>
+    </button>
+
+			<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+				<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+					<li class="am-dropdown" data-am-dropdown>
+						<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+							<span class="am-icon-users am-icon-fw"></span> 欢迎，#(l_name??"")
+							<span class="am-icon-caret-down am-icon-fw"></span>
+						</a>
+						<ul class="am-dropdown-content">
+							<li>
+								<a>
+									<span class="am-icon-user am-icon-fw"></span> 账号：#(l_username??"")</a>
+							</li>
+							<li>
+								<a>
+									<span class="am-icon-cog am-icon-fw"></span> 身份：#(l_role??"")</a>
+							</li>
+							#if(l_roleId == 5)
+							<li>
+								<a>
+									<span class="am-icon-cog am-icon-fw"></span> 年级：#(l_grade??"")</a>
+							</li>
+							<li>
+								<a>
+									<span class="am-icon-cog am-icon-fw"></span> 专业：#(l_major??"")</a>
+							</li>
+							<li>
+								<a>
+									<span class="am-icon-cog am-icon-fw"></span> 班级：#(l_class??"")</a>
+							</li>
+							#end
+							<li>
+								<a href="/oem/logout">
+									<span class="am-icon-power-off am-icon-fw"></span> 退出登录</a>
+							</li>
+						</ul>
+					</li>
+					<li class="am-hide-sm-only">
+						<a href="javascript:;" id="admin-fullscreen">
+							<span class="am-icon-arrows-alt am-icon-fw"></span>
+							<span class="admin-fullText">开启全屏</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="am-cf admin-main">
+			<!-- sidebar start -->
+			<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+				<div class="am-offcanvas-bar admin-offcanvas-bar">
+					<ul class="am-list admin-sidebar-list" id="siderbar-ul">
+						<li id="li-home">
+							<a href="/oem/home">
+								<span class="am-icon-home am-icon-fw"></span> 主页
+							</a>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf outList" data-am-collapse="{target: '#collapse-nav'}">
+								<span class="am-icon-th-list am-icon-fw"></span> 流程管理
+								<span class="am-icon-angle-down am-fr am-margin-right"></span>
+							</a>
+							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
+								<li id="li-upload">
+									<a href="/oem/upload">
+										<span class="am-icon-upload am-icon-fw color-grey"></span> 上传我的作业</a>
+								</li>
+								<li id="li-mine">
+									<a href="/oem/mine">
+										<span class="am-icon-user-md am-icon-fw color-grey"></span> 作业记录</a>
+								</li>
+								#if(l_roleId == 1 || l_roleId == 3)
+								<li id="li-review">
+									<a href="/oem/review">
+										<span class="am-icon-check-square-o am-icon-fw color-grey"></span> 作业审核</a>
+								</li>
+								#end #if(l_roleId != 5)
+								<li id="li-query-stu">
+									<a href="/oem/query-stu">
+										<span class="am-icon-search am-icon-fw color-grey"></span> 管理学生作业</a>
+								</li>
+								#end #if(l_roleId == 1 || l_roleId == 2)
+								<li id="li-query-tea">
+									<a href="/oem/query-tea">
+										<span class="am-icon-search am-icon-fw color-grey"></span> 管理教师作业</a>
+								</li>
+								#end
+								<div style="width:10px;height:1px;"></div>
+							</ul>
+						</li>
+						#if(l_roleId == 1)
+						<li class="admin-parent">
+							<a class="am-cf outList" data-am-collapse="{target: '#achi-nav'}">
+								<span class="am-icon-file-text am-icon-fw"></span> 作业管理
+								<span class="am-icon-angle-down am-fr am-margin-right am-icon-fw"></span>
+							</a>
+							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="achi-nav">
+								<li id="li-work">
+									<a href="/oem/work">
+										<span class="am-icon-calendar am-icon-fw color-grey"></span> 作业列表</a>
+								</li>
+								<li id="li-work-add">
+									<a href="/oem/work-add">
+										<span class="am-icon-calendar am-icon-fw color-grey"></span> 添加作业</a>
+								</li>
+								<div style="width:10px;height:1px;"></div>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf outList" data-am-collapse="{target: '#user-nav'}">
+								<span class="am-icon-user am-icon-fw"></span> 用户管理
+								<span class="am-icon-angle-down am-fr am-margin-right am-icon-fw"></span>
+							</a>
+							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="user-nav">
+								<li id="li-student-management">
+									<a href="/oem/student-management">
+										<span class="am-icon-calendar am-icon-fw color-grey"></span> 学生管理</a>
+								</li>
+								<li id="li-teacher-management">
+									<a href="/oem/teacher-management">
+										<span class="am-icon-calendar am-icon-fw color-grey"></span> 教师管理</a>
+								</li>
+								<div style="width:10px;height:1px;"></div>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf outList" data-am-collapse="{target: '#data-nav'}">
+								<span class="am-icon-book am-icon-fw"></span> 基础数据
+								<span class="am-icon-angle-down am-fr am-margin-right am-icon-fw"></span>
+							</a>
+							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="data-nav">
+								<li id="li-import-stu">
+									<a href="/oem/import-stu">
+										<span class="am-icon-calendar am-icon-fw color-grey"></span> 学生导入</a>
+								</li>
+								<li id="li-import-tea">
+									<a href="/oem/import-tea">
+										<span class="am-icon-calendar am-icon-fw color-grey"></span> 教师导入</a>
+								</li>
+								<li id="li-import-work">
+									<a href="/oem/import-work">
+										<span class="am-icon-calendar am-icon-fw color-grey"></span> 作业导入</a>
+								</li>
+								<div style="width:10px;height:1px;"></div>
+							</ul>
+						</li>
+						#end
+						<li class="admin-parent">
+							<a class="am-cf outList" data-am-collapse="{target: '#system-nav'}">
+								<span class="am-icon-cog am-icon-fw"></span> 系统设置
+								<span class="am-icon-angle-down am-fr am-margin-right am-icon-fw"></span>
+							</a>
+							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="system-nav">
+								<li id="li-password">
+									<a href="/oem/password">
+										<span class="am-icon-lock am-icon-fw color-grey"></span> 修改密码</a>
+								</li>
+								<div style="width:10px;height:1px;"></div>
+							</ul>
+						</li>
+					</ul>
+
+					<div class="am-panel am-panel-default admin-sidebar-panel">
+						<div class="am-panel-bd">
+							<p>
+								<span class="am-icon-bookmark am-icon-fw"></span> 公告
+							#if(l_roleId == 1)
+							    <button class="am-btn am-btn-success am-radius am-btn-xs am-topbar-right" title="编辑" id="noticeedit"><i class="am-icon-pencil"></i></button>
+							#end
+							</p>
+							<p id="notice">#(l_notice??"")</p>
+						</div>
+					</div>
+				</div>
+				#if(l_roleId == 1)
+				<div class="am-modal am-modal-prompt" tabindex="-1" id="my-prompt">
+					<div class="am-modal-dialog">
+						<div class="am-modal-hd">公告编辑</div>
+						<div class="am-modal-bd">
+							原公告文本
+							<textarea id="oldnotice" class="am-modal-prompt-input" rows="5" disabled></textarea>
+							新公告文本
+							<textarea class="am-modal-prompt-input" rows="5"></textarea>
+						</div>
+						<div class="am-modal-footer">
+							<span class="am-modal-btn" data-am-modal-cancel>取消</span>
+							<span class="am-modal-btn" data-am-modal-confirm>提交</span>
+						</div>
+					</div>
+				</div>
+				#end
+			</div>
+			<!-- sidebar end -->
+
+			<!-- content start -->
+			<div class="admin-content">
+				<div class="admin-content-body">
+					#@content?()
+				</div>
+
+				<footer class="admin-content-footer">
+					<hr>
+					<p class="am-text-center"><small>东南大学成贤学院<br/><a href="http://jsjx.cxxy.seu.edu.cn/">电子与计算机工程学院</a> 技术支持</small></p>
+				</footer>
+			</div>
+			<!-- content end -->
+
+		</div>
+
+		<a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+
+		<script src="assets/amazeui/js/jquery.min.js"></script>
+		<script src="assets/amazeui/js/amazeui.min.js"></script>
+		<script src="assets/amazeui/js/app.js"></script>
+		<script src="assets/layui/layui.all.js"></script>
+		<script src="assets/amazeui/js/my.js"></script>
+		<script src="assets/amazeui/echo/echo.js"></script>
+		#if(l_roleId == 1)
+		<script type="text/javascript">
+		$(function(){
+			$(".outList").on('click',function(){
+				if($(this).hasClass('am-collapsed')){
+					$(this).find(".am-icon-angle-down").css("transform","rotate(0deg)");
+				}else{
+					$(this).find(".am-icon-angle-down").css("transform","rotate(270deg)");
+				}
+			});
+		})
+			$('#noticeedit').on('click', function() {
+				var oldnotice = '#(l_notice??"")';
+				var reg=new RegExp("<br/>","g");
+				$("#oldnotice").val(oldnotice.replace(reg,"\r\n"));
+			    $('#my-prompt').modal({
+				relatedTarget: this,
+				onConfirm: function(e) {
+						$.ajax({
+							url: "/oem/notice/edit",
+							type: "GET",
+							data: {content: e.data[1].replace(/\n|\r\n/g,"<br/>")},
+							success: function(data) {
+								if(data.code == 0) {
+									layui.layer.msg(data.msg, {icon: 1,time: 1000},function(){
+										location.reload(true);
+									});
+								} else {
+									layui.layer.msg(data.msg, {icon: 2,time: 1000},function(){
+										location.reload(true);
+									});
+								}
+							}
+						});
+			      },
+			      onCancel: function(e) {
+			      }
+			   });
+			});
+			
+		</script>
+		#end
+		#@js?()
+	</body>
+
+</html>
+#end
